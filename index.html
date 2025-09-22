@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Sowmya Srinivvasan — Cybersecurity Analyst portfolio (Splunk, PenTesting, Cloud Security)" />
+  <meta name="description" content="Sowmya Srinivvasan — Cybersecurity Analyst portfolio" />
   <title>Sowmya Srinivvasan — Cybersecurity Portfolio</title>
 
   <!-- Font Awesome for icons -->
@@ -15,29 +15,16 @@
   <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
 
-  <!-- Smooth scroll -->
-  <style>
-    html { scroll-behavior: smooth; }
-  </style>
+  <style> html { scroll-behavior: smooth; } </style>
 </head>
 <body>
 
   <!-- Hero Section -->
   <header class="site-header">
-    <div class="hero" data-aos="fade-down" data-aos-duration="1200">
-      <div class="hero-bg"></div> <!-- animated background -->
+    <div class="hero">
 
-      <h1>Hello, I'm <span>Sowmya Srinivvasan</span></h1>
-      <p>Cybersecurity Analyst • Ethical Hacking • Cloud & Network Security</p>
-      <a href="#contact" class="btn">Contact Me</a>
-
-      <!-- Contact in hero -->
-      <div class="hero-contact" data-aos="fade-up" data-aos-delay="200">
-        <p><i class="fa-solid fa-envelope"></i> <a href="mailto:sowmyasrinivvasan@gmail.com">sowmyasrinivvasan@gmail.com</a></p>
-        <p><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/sowmyasrinivvasan/" target="_blank">linkedin.com/in/sowmyasrinivvasan</a></p>
-      </div>
-
-      <!-- Floating icons -->
+      <!-- Background and floating icons -->
+      <div class="hero-bg"></div>
       <div class="floating-icons">
         <i class="fa-solid fa-shield-halved"></i>
         <i class="fa-solid fa-bug"></i>
@@ -45,11 +32,24 @@
         <i class="fa-solid fa-code"></i>
         <i class="fa-solid fa-magnifying-glass"></i>
       </div>
+
+      <!-- Text content -->
+      <div class="hero-content" data-aos="fade-down">
+        <h1>Hello, I'm <span>Sowmya Srinivvasan</span></h1>
+        <p>Cybersecurity Analyst • Ethical Hacking • Cloud & Network Security</p>
+        <a href="#contact" class="btn">Contact Me</a>
+
+        <div class="hero-contact" data-aos="fade-up" data-aos-delay="200">
+          <p><i class="fa-solid fa-envelope"></i> <a href="mailto:sowmyasrinivvasan@gmail.com">sowmyasrinivvasan@gmail.com</a></p>
+          <p><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/sowmyasrinivvasan/" target="_blank">linkedin.com/in/sowmyasrinivvasan</a></p>
+        </div>
+      </div>
+
     </div>
   </header>
 
   <!-- Navigation -->
-  <nav class="main-nav" data-aos="fade-up" data-aos-duration="1000">
+  <nav class="main-nav" data-aos="fade-up">
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
@@ -81,28 +81,23 @@
     <!-- Projects -->
     <section id="projects" class="card" data-aos="fade-up">
       <h2>Highlighted Projects</h2>
-
       <div class="projects-grid">
         <article class="project" data-aos="fade-up" data-aos-delay="100">
           <h3>📊 VSI Custom Monitoring Environment</h3>
           <p>Designed and implemented a Splunk-based monitoring solution for detecting and responding to security threats, leveraging log aggregation, correlation, and SPL for real-time monitoring and alerting.</p>
         </article>
-
         <article class="project" data-aos="fade-up" data-aos-delay="200">
           <h3>🦠 Malware Analysis in Isolated Sandbox</h3>
           <p>Set up a malware analysis lab using VMware, FLARE-VM, and INetSim. Conducted dynamic analysis, network traffic inspection, and C2 communication tracing to classify malicious behavior.</p>
         </article>
-
         <article class="project" data-aos="fade-up" data-aos-delay="300">
           <h3>🛡️ Penetration Testing (CTF Style)</h3>
           <p>Performed pentests on web apps, Linux, and Windows servers — exploited SQL injection, XSS, and misconfigurations, providing risk-based remediation recommendations.</p>
         </article>
-
         <article class="project" data-aos="fade-up" data-aos-delay="400">
           <h3>🐧 Linux Server Hardening</h3>
           <p>Hardened Linux systems: user management policies, SSH key-based auth, secure SSH configs, and automated patching to reduce attack surface.</p>
         </article>
-
         <article class="project" data-aos="fade-up" data-aos-delay="500">
           <h3>☁️ Cloud Security Implementation</h3>
           <p>Deployed and secured an AWS-hosted application with IAM, encryption, logging, and continuous monitoring to meet security best practices.</p>
@@ -128,11 +123,6 @@
 
   <!-- AOS JS -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 1000,
-      once: true
-    });
-  </script>
+  <script> AOS.init({ duration: 1000, once: true }); </script>
 </body>
 </html>
