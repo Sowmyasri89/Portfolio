@@ -9,35 +9,35 @@ body{margin:0;font-family:Arial,sans-serif;background:#f6f7fb;color:#222;}
 .floating-icons i:hover{transform:scale(1.3) rotate(15deg);}
 @keyframes float{0%,100%{transform:translateY(0);}50%{transform:translateY(-20px);}}
 
-/* Certifications */
-.certifications-container {
+
+.hero-flex {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+  justify-content: space-between; /* <-- THIS pushes left & right */
   align-items: center;
+  max-width: 800px;
+  margin: 0 auto 15px auto; /* centers within page */
+  padding: 0 20px;
 }
 
-.cert-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: #1e1e1e;
-  padding: 15px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.hero-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 4px solid #007bff;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
 }
 
-.cert-card:hover {
-  transform: translateY(-5px) scale(1.05);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
-}
-
-.cert-badge {
-  width: 100px;
+.hero-badge {
+  width: 110px;
   height: auto;
-  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 2px solid #ffc107;
+  background: #fff;
+  padding: 6px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
 }
 /* Floating Icons */
 .floating-icons {
