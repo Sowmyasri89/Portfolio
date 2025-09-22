@@ -24,8 +24,11 @@ body{margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "
 @keyframes float{0%,100%{transform:translateY(0);}50%{transform:translateY(-20px);}}
 @keyframes gradientBG{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%;}}
 
+/* Hero content */
 .hero-content{position:relative; z-index:10; top:50%; transform:translateY(-50%);}
-.hero-content h1 span{color:#ffdd00;}
+.hero-inner{display:flex;align-items:center;gap:40px;flex-wrap:wrap;max-width:900px;text-align:left;}
+.hero-photo{width:180px;height:180px;border-radius:50%;object-fit:cover;border:4px solid #ffdd00;}
+.hero-text h1 span{color:#ffdd00;}
 .btn{background:#ffdd00;color:#222;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:600;display:inline-block;margin-top:20px;}
 .hero-contact a{color:#ffdd00;text-decoration:none;font-weight:600;margin:0 5px;}
 .hero-contact p{margin:6px 0;}
@@ -51,4 +54,7 @@ ul li i{margin-right:8px;color:var(--accent);}
 .site-footer{padding:18px 0;text-align:center;color:var(--muted);font-size:.9rem;}
 
 /* Responsive */
-@media(max-width:600px){.wrap{padding:14px}.hero-wrapper{height:400px}.hero-content h1{font-size:1.8rem;}}
+@media(max-width:768px){
+  .hero-inner{flex-direction:column;align-items:center;text-align:center;}
+  .hero-photo{width:150px;height:150px;margin-bottom:20px;}
+}
